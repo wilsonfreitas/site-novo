@@ -1,20 +1,0 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>dias úteis on Wilson Freitas</title>
-    <link>http://www.example.com/tags/dias-%C3%BAteis/</link>
-    <description>Recent content in dias úteis on Wilson Freitas</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>pt-br</language>
-    <lastBuildDate>Thu, 15 May 2014 00:00:00 +0000</lastBuildDate><atom:link href="http://www.example.com/tags/dias-%C3%BAteis/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>bizdays - dias úteis no R</title>
-      <link>http://www.example.com/posts/2014-05-15-bizdays-dias-uteis-no-r/</link>
-      <pubDate>Thu, 15 May 2014 00:00:00 +0000</pubDate>
-      
-      <guid>http://www.example.com/posts/2014-05-15-bizdays-dias-uteis-no-r/</guid>
-      <description>Quem trabalha no mercado financeiro brasileiro lida constantemente com uma praga que é a contagem de dias úteis.Não que seja difícil utilizar a contagem de dias úteis para fazer o apreçamento de instrumentos financeiros.A dificuldade é ter a contagem de dias úteis a mão e de maneira flexível, onde possamos, eventualmente, inserir ou remover feriados.Essa disponibilidade é a razão pela qual o Excel é tão utilizado.</description>
-    </item>
-    
-  </channel>
-</rss>
