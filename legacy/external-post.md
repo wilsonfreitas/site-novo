@@ -10,4 +10,5 @@ tags:
 - development
 - themes
 title: 'External Page: Hugo Coder Wiki'
+draft: true
 ---

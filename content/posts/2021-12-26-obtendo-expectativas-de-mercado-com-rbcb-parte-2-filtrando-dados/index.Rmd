@@ -1,0 +1,17 @@
+---
+title: Obtendo Expectativas de Mercado com rbcb Parte 2 - filtrando dados
+author: Wilson Freitas
+date: '2021-12-26'
+slug: []
+categories:
+  - finance
+tags:
+  - rbcb
+  - open data
+  - R
+  - FOCUS
+authors: []
+description: ''
+externalLink: ''
+series: []
+---

@@ -5,6 +5,7 @@ description: A brief description about Hugo Coder's Custom Shortcodes
 tags:
 - shortcodes
 title: More Rich Content
+draft: true
 ---
 
 Hugo Coder provides some Custom Shortcodes.

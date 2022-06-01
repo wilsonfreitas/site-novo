@@ -8,8 +8,8 @@ enableEmoji: yes
 params:
   author: Wilson Freitas
   avatarURL: "images/Foto Perfil do Instagram 2.png"
-  colorScheme: auto
-  commit: https://github.com/luizdepra/hugo-coder/tree/
+  colorScheme: light
+  # commit: https://github.com/luizdepra/hugo-coder/tree/
   # csp:
   #   childsrc: '''self'''
   #   connectsrc:
@@ -52,9 +52,13 @@ params:
       name: Github
       url: https://github.com/wilsonfreitas/
       weight: 1
+    - icon: fa fa-2x fa-instagram
+      name: Instagram
+      url: https://instagram.com/__wilsonfreitas/
+      weight: 2
     - icon: fa fa-2x fa-twitter
       name: Twitter
-      url: https://twitter.com/aboutwilson/
+      url: https://twitter.com/__wilsonfreitas/
       weight: 3
     - icon: fa fa-2x fa-linkedin
       name: LinkedIn

@@ -1,0 +1,17 @@
+---
+title: Expectativas de Inflação
+author: Wilson Freitas
+date: '2021-12-27'
+slug: []
+categories:
+  - finance
+tags:
+  - rbcb
+  - open data
+  - R
+  - FOCUS
+authors: []
+description: ''
+externalLink: ''
+series: []
+---

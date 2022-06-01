@@ -1,0 +1,77 @@
+---
+title: Obtendo Expectativas de Mercado com rbcb
+author: Wilson Freitas
+date: '2021-12-23'
+slug: []
+categories:
+  - finance
+tags:
+  - rbcb
+  - open data
+  - R
+  - FOCUS
+authors: []
+description: ''
+externalLink: ''
+series: []
+---
+
+
+
+```{r, message=FALSE, warning=FALSE}
+library(dplyr)
+library(ggplot2)
+library(rbcb)
+```
+
+```{r}
+get_market_expectations |> args()
+```
+
+```{r}
+df <- get_market_expectations("annual", indic = "IPCA", start_date = "2020-12-01",
+                              `$filter` = "(DataReferencia eq '2021' or DataReferencia eq '2022') and baseCalculo eq 0")
+df |> head()
+```
+
+```{r}
+df |>
+  ggplot(aes(x = Data, y = Mediana, group = DataReferencia, colour = DataReferencia)) +
+  geom_line()
+```
+
+
+```{r}
+df |>
+  filter(DataReferencia == 2021) |>
+  mutate(Min = Media - DesvioPadrao, Max = Media + DesvioPadrao) |>
+  ggplot(aes(x = Data)) +
+  geom_line(aes(y = Mediana), colour = "black") +
+  geom_line(aes(y = Max), colour = "grey") +
+  geom_line(aes(y = Min), colour = "grey") +
+  geom_ribbon(aes(ymin = Min, ymax = Max), fill = "blue", alpha = 0.3)
+```
+
+### Coeficiente de variação (CV)
+
+```{r}
+df |>
+  filter(DataReferencia == 2021) |>
+  mutate(CV = Media / DesvioPadrao) |>
+  ggplot(aes(x = Data, y = CV)) +
+  geom_line()
+```
+
+
+
+
+```{r}
+df <- get_market_expectations("annual", indic = "PIB Total", start_date = "2020-12-01",
+                              `$filter` = "(DataReferencia eq '2021' or DataReferencia eq '2022') and baseCalculo eq 0")
+df |> head()
+```
+```{r}
+df |>
+  ggplot(aes(x = Data, y = Mediana, group = DataReferencia, colour = DataReferencia)) +
+  geom_line()
+```
